@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#res {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descobrindo nacionalidades!!</h1>
+    De qual país você é:<textarea name="txtpais" id="txtpais" cols="30" rows="10"></textarea>
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            var nac = (txtpais.value)
+            res.innerText = `você nasceu em ${nac}`
+            
+            if (nac.toUpperCase() == 'BRASIL') {
+                res.innerText+= `Você é brasileiro`
+            } 
+            
+            else {
+                res.innerHTML = `Você é gringo`
+            }
+        }
+
+    </script>
+</body>
+</html>
