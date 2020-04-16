@@ -1,2 +1,3 @@
 # CursoemVideo-JavaScript
- Sites e exercicios em JavaScript
+
+ Sites e exercicios desenvolvidos em html e JavaScript
